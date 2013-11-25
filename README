@@ -127,7 +127,7 @@ Settings:
   to use ssh and have another machine with greater processing capabilities take care of
   transcoding. Revise the ffmpeg command lines from 'ffmpeg' to 'ssh user@remote ffmpeg'
   in the config file. The remote machine will transfer its standard output to the server
-  running HDHRTV. Remote ssh keys will need to be set up to allow for apache, or whatever
+  running HDHRTV. Remote ssh keys will need to be set up to allow for apache, or whichever
   user is used to run the webserver, to connect to the remote machine and execute ffmpeg.
   See (http://mingstert.blogspot.com/2009/11/ssh-via-apache-deamon-user.html) 
 
@@ -144,8 +144,8 @@ Settings:
 
 10. Possible TODO Items
 
-- Monitor for ophaned ffmpeg processed and terminate gracefully if discovered.
-  Consider usind PID files.
+- Monitor for ophaned ffmpeg processes and terminate gracefully if discovered.
+  Consider using PID files.
 - Add user option to terminate any orphaned ffmpeg processes.
 - Add more options and information to Flowplayer, such as 'now playing',
   adjust bitrate, mini-EPG. Mini-EPG could be a menu of favorite channels.
