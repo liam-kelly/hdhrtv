@@ -12,7 +12,7 @@ $config['page_title'] = 'HDHR TV';
 
 // HDHomeRun protocol, IP, and port settings
 $config['hdhr_protocol'] = 'http';
-$config['hdhr_ip'] = '192.168.1.10';
+$config['hdhr_ip'] = '192.168.0.199';
 $config['hdhr_port'] = '5004';
 
 // Set HDHR tuner
