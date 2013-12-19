@@ -59,14 +59,14 @@ $config['mythtv_pass'] = 'mythtv';
 // named, and in turn selected by the user.
 
 // If your ffmpeg binary is in a weird location define it here
-$ffmep_path = '/home/new/bin/';
+$ffmpeg_path = '/home/new/bin/';
 
 // This is the original ffmpeg command used during development.
 // This is similar to the transoding command used by MythWeb.
 // This creates a standard flv stream using the sorenson codec.
 // This cannot be multithreaded so it most likely won't work
 // very well for HD video.
-$ffmpeg_cmd['flv'] = $ffmep_path."ffmpeg"
+$ffmpeg_cmd['flv'] = $ffmpeg_path."ffmpeg"
 		." -y"
 		." -i {$config['hdhr_protocol']}://{$config['hdhr_ip']}:{$config['hdhr_port']}/{$config['hdhr_tuner']}/v{channel}"
 		." -threads 0"
@@ -84,7 +84,7 @@ $ffmpeg_cmd['flv'] = $ffmep_path."ffmpeg"
 // This command transcodes to h264 video, mp3 audio,
 // and places in an flv container. The libx264 library
 // can be multithreaded which is better suited for HD video.
-$ffmpeg_cmd['h264'] = $ffmep_path."ffmpeg"
+$ffmpeg_cmd['h264'] = $ffmpeg_path."ffmpeg"
 		." -y"
 		." -i {$config['hdhr_protocol']}://{$config['hdhr_ip']}:{$config['hdhr_port']}/{$config['hdhr_tuner']}/v{channel}"
 		." -threads 0"
